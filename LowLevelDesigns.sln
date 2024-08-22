@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingFramework", "Logging
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingFramework.Test", "LoggingFramework.Test\LoggingFramework.Test.csproj", "{CF637FFF-3A50-4845-A558-73A7185D456F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLot", "ParkingLot\ParkingLot.csproj", "{F95133CB-1DCC-45D4-BA6C-9F259AB5AF88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLot.Test", "ParkingLot.Test\ParkingLot.Test.csproj", "{6FCDCBD2-11D9-48FD-BCAD-1DD5CF14B510}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{CF637FFF-3A50-4845-A558-73A7185D456F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF637FFF-3A50-4845-A558-73A7185D456F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF637FFF-3A50-4845-A558-73A7185D456F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95133CB-1DCC-45D4-BA6C-9F259AB5AF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95133CB-1DCC-45D4-BA6C-9F259AB5AF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95133CB-1DCC-45D4-BA6C-9F259AB5AF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95133CB-1DCC-45D4-BA6C-9F259AB5AF88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FCDCBD2-11D9-48FD-BCAD-1DD5CF14B510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FCDCBD2-11D9-48FD-BCAD-1DD5CF14B510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FCDCBD2-11D9-48FD-BCAD-1DD5CF14B510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FCDCBD2-11D9-48FD-BCAD-1DD5CF14B510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
