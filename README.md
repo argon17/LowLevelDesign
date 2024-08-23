@@ -1,0 +1,2 @@
+- Using Enum vs Classes
+     -  Should not Violate Open/Closed Principle
