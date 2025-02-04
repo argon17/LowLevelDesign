@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splitwise", "Splitwise\Splitwise.csproj", "{16CB2336-A586-480E-A5C3-50E87588A538}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splitwise.Test", "Splitwise.Test\Splitwise.Test.csproj", "{FD325438-FB07-4FE6-A012-8DD266C3B613}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingFramework", "LoggingFramework\LoggingFramework.csproj", "{1770AED6-E6CE-4BC6-A2DA-1A27788AA61E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingFramework.Test", "LoggingFramework.Test\LoggingFramework.Test.csproj", "{CF637FFF-3A50-4845-A558-73A7185D456F}"
@@ -24,14 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16CB2336-A586-480E-A5C3-50E87588A538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16CB2336-A586-480E-A5C3-50E87588A538}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16CB2336-A586-480E-A5C3-50E87588A538}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16CB2336-A586-480E-A5C3-50E87588A538}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD325438-FB07-4FE6-A012-8DD266C3B613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD325438-FB07-4FE6-A012-8DD266C3B613}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD325438-FB07-4FE6-A012-8DD266C3B613}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD325438-FB07-4FE6-A012-8DD266C3B613}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1770AED6-E6CE-4BC6-A2DA-1A27788AA61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1770AED6-E6CE-4BC6-A2DA-1A27788AA61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1770AED6-E6CE-4BC6-A2DA-1A27788AA61E}.Release|Any CPU.ActiveCfg = Release|Any CPU

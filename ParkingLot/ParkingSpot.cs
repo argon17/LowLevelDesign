@@ -1,8 +1,6 @@
-public class ParkingSpot
+namespace ParkingLot;
+
+public class ParkingSpot(VehicleType vehicleType)
 {
-    public ParkingSpot(VehicleType vehicleType)
-    {
-        VehicleType = vehicleType;
-    }
-    public VehicleType VehicleType { get; init; }
+    public VehicleType VehicleType { get; init; } = vehicleType;
 }

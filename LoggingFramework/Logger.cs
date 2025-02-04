@@ -8,10 +8,11 @@ public class Logger
         LogConfiguration = new LogConfiguration(new ConsoleSink());
     }
 
-    public LogConfiguration LogConfiguration { get; set; }
+    private LogConfiguration LogConfiguration { get; set; }
 
     public static Logger Instance => _instance ??= new Logger();
-    public void Log(LogLevel logLevel, string logMessage)
+
+    private void Log(LogLevel logLevel, string logMessage)
     {
         if (logLevel >= LogConfiguration.LogLevel)
         {

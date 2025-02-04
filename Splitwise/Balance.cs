@@ -1,3 +1,5 @@
+namespace Splitwise;
+
 public class Balance
 {
     Currency Currency { get; } = Currency.Inr;

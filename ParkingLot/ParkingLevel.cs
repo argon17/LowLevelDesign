@@ -1,43 +1,47 @@
+namespace ParkingLot;
+
 public class ParkingLevel
 {
-    readonly Dictionary<VehicleType, int> freeSpots;
+    private readonly Dictionary<VehicleType, int> _freeSpots;
+
     public ParkingLevel(ParkingSpot[] parkingSpots)
     {
         _parkingSpots = [.. parkingSpots];
-        freeSpots = [];
+        _freeSpots = [];
         foreach (ParkingSpot parkingSpot in _parkingSpots)
         {
-            if (!freeSpots.ContainsKey(parkingSpot.VehicleType))
-            {
-                freeSpots[parkingSpot.VehicleType] = 0;
-            }
-            ++freeSpots[parkingSpot.VehicleType];
+            _freeSpots.TryAdd(parkingSpot.VehicleType, 0);
+            ++_freeSpots[parkingSpot.VehicleType];
         }
     }
-    public List<ParkingSpot> _parkingSpots;
+
+    private readonly List<ParkingSpot> _parkingSpots;
+
     internal void AddParkingSpot(ParkingSpot newParkingSpot)
     {
         _parkingSpots.Add(newParkingSpot);
-        ++freeSpots[newParkingSpot.VehicleType];
+        ++_freeSpots[newParkingSpot.VehicleType];
     }
 
     internal bool ParkVehicle(VehicleType vehicleType)
     {
-        if (freeSpots.ContainsKey(vehicleType) && freeSpots[vehicleType] > 0)
+        if (_freeSpots.ContainsKey(vehicleType) && _freeSpots[vehicleType] > 0)
         {
-            --freeSpots[vehicleType];
+            --_freeSpots[vehicleType];
             return true;
         }
+
         return false;
     }
 
     internal bool UnParkVehicle(VehicleType vehicleType)
     {
-        if (freeSpots.ContainsKey(vehicleType))
+        if (_freeSpots.ContainsKey(vehicleType))
         {
-            ++freeSpots[vehicleType];
+            ++_freeSpots[vehicleType];
             return true;
         }
+
         return false;
     }
 }

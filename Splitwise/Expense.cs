@@ -1,3 +1,5 @@
+namespace Splitwise;
+
 public class Expense
 {
     Guid ExpenseId { get; set; }

@@ -1,13 +1,12 @@
-public class FileSink : ILogSink
+namespace LoggingFramework;
+
+public class FileSink(string logFilePath) : ILogSink
 {
-    public FileInfo logFileInfo;
-    public FileSink(string logFilePath)
-    {
-        logFileInfo = new FileInfo(logFilePath);
-    }
+    private readonly FileInfo _logFileInfo = new(logFilePath);
+
     public void Write(LogMessage logMessage)
     {
-        StreamWriter streamWriter = new StreamWriter(logFileInfo.FullName);
+        StreamWriter streamWriter = new StreamWriter(_logFileInfo.FullName);
         streamWriter.Write(logMessage);
     }
 }

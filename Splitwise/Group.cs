@@ -1,3 +1,5 @@
+namespace Splitwise;
+
 public class Group
 {
     Currency Currency { get; } = Currency.Inr;

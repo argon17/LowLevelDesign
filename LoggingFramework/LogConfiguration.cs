@@ -1,10 +1,7 @@
-public class LogConfiguration
+namespace LoggingFramework;
+
+public class LogConfiguration(ILogSink logSink, LogLevel logLevel = LogLevel.Info)
 {
-    public LogConfiguration(ILogSink logSink, LogLevel logLevel = LogLevel.Info)
-    {
-        LogSink = logSink;
-        LogLevel = logLevel;
-    }
-    public LogLevel LogLevel { get; set; }
-    public ILogSink LogSink { get; set; }
+    public LogLevel LogLevel { get; set; } = logLevel;
+    public ILogSink LogSink { get; set; } = logSink;
 }

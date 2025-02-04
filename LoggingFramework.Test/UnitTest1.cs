@@ -17,11 +17,11 @@ public class UnitTest1
 
         string output = stringWriter.ToString();
         Assert.Equal("""
-        Info - Info
-        Warning - Warning
-        Error - Error
-        Fatal - Fatal
+                     Info - Info
+                     Warning - Warning
+                     Error - Error
+                     Fatal - Fatal
 
-        """, output);
+                     """, output);
     }
 }

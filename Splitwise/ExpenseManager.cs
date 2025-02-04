@@ -1,3 +1,5 @@
+namespace Splitwise;
+
 public class ExpenseService
 {
     public Guid CreateGroup(User[] users, Currency currency) => throw new NotImplementedException();

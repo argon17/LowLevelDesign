@@ -1,3 +1,5 @@
+namespace Splitwise;
+
 public enum Currency
 {
     Inr,

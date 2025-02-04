@@ -1,3 +1,5 @@
+namespace LoggingFramework;
+
 public class ConsoleSink : ILogSink
 {
     public void Write(LogMessage logMessage)
