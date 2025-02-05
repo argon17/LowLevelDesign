@@ -16,8 +16,8 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\LoggingFramework\LoggingFramework.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj" />
+    </ItemGroup>
 
 </Project>

@@ -1,3 +1,5 @@
+using Xunit;
+
 namespace LoggingFramework.Test;
 
 public class UnitTest1
